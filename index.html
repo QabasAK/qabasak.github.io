@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qabas Alkaissi</title>
+<meta name="description" content="Qabas Alkaissi. Computer engineer working on adversarial robustness for computer vision, hardware security (PUFs) and graph algorithms. Based in Amman, Jordan.">
+<meta property="og:title" content="Qabas Alkaissi">
+<meta property="og:description" content="Computer engineer working on adversarial robustness for computer vision, hardware security and graph algorithms.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://qabasak.github.io/">
+<meta name="robots" content="index, follow">
+<meta property="og:url" content="https://qabasak.github.io/">
+<meta property="og:image" content="https://qabasak.github.io/images/qabas-alkaissi.jpg">
+<meta property="og:image:alt" content="Portrait of Qabas Alkaissi in a graduation gown">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://qabasak.github.io/images/qabas-alkaissi.jpg">
+<meta name="author" content="Qabas Alkaissi">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Qabas Alkaissi",
+  "url": "https://qabasak.github.io/",
+  "image": "https://qabasak.github.io/images/qabas-alkaissi.jpg",
+  "givenName": "Qabas",
+  "familyName": "Alkaissi",
+  "description": "Computer engineer working on adversarial robustness for computer vision, hardware security with physical unclonable functions, and graph algorithms.",
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Princess Sumaya University for Technology"
+  },
+  "homeLocation": {
+    "@type": "Place",
+    "address": { "@type": "PostalAddress", "addressLocality": "Amman", "addressCountry": "JO" }
+  },
+  "knowsAbout": ["Adversarial machine learning", "Computer vision", "Physical unclonable functions", "Hardware security", "Graph algorithms", "Biclique enumeration"],
+  "sameAs": [
+    "https://www.linkedin.com/in/qabas-alkaissi",
+    "https://github.com/QabasAK"
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: a plain academic home page. One column, top nav, section headings with a thin rule, lists for everything. Light only. */
+:root{
+  --bg:#ffffff;
+  --ink:#1b1f24;
+  --mute:#59616b;
+  --rule:#dfe2e6;
+  --link:#1d4f9c;
+  --tint:#f4f6f9;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --sans:"Source Sans 3","Helvetica Neue",Arial,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}
+a:hover{text-decoration:underline}
+:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px 60px}
+
+.head{padding:48px 0 18px}
+.pair{display:flex;gap:14px;align-items:flex-end;justify-content:center;flex-wrap:wrap;margin-top:20px}
+figure.fig{margin:0}
+.pair img{display:block;height:270px;width:auto;max-width:100%;border-radius:3px;border:1px solid var(--rule)}
+figure.fig figcaption{font-family:var(--sans);font-size:14px;color:var(--mute);margin-top:6px}
+h1{font-family:var(--sans);font-weight:600;font-size:clamp(32px,6vw,42px);line-height:1.15;letter-spacing:-.01em}
+.role{margin-top:6px;color:var(--mute);font-size:19px}
+.role span{display:block}
+.contact{margin-top:14px;font-family:var(--sans);font-size:16px;display:flex;flex-wrap:wrap;gap:6px 18px}
+
+nav.menu{font-family:var(--sans);font-size:16px;display:flex;flex-wrap:wrap;gap:6px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:10px 0;margin:18px 0 8px}
+nav.menu a{color:var(--ink)}
+nav.menu a:hover{color:var(--link);text-decoration:none}
+nav.menu a+a::before{content:"|";color:var(--rule);margin:0 12px}
+
+section{padding-top:30px}
+h2{font-family:var(--sans);font-weight:600;font-size:22px;line-height:1.2;padding-bottom:6px;border-bottom:1px solid var(--rule);margin-bottom:14px}
+h3{font-family:var(--sans);font-weight:600;font-size:16px;letter-spacing:.02em;text-transform:uppercase;color:var(--mute);margin:22px 0 8px}
+p+p{margin-top:14px}
+.note{background:var(--tint);border-left:3px solid var(--link);padding:12px 16px;margin-top:20px}
+.note b{font-family:var(--sans);font-weight:600}
+
+ul.list{list-style:none}
+ul.list>li{padding:9px 0}
+ul.list .t{font-weight:600}
+ul.list .m{color:var(--mute);font-size:16.5px}
+ul.bul{padding-left:22px}
+ul.bul li{padding:3px 0}
+
+.entry{display:grid;grid-template-columns:150px 1fr;gap:2px 20px;padding:9px 0}
+.entry .when{font-family:var(--sans);font-size:15px;color:var(--mute);padding-top:3px}
+.entry .t{font-weight:600}
+.entry .m{color:var(--mute);font-size:16.5px}
+
+
+.scroller-bar{display:flex;justify-content:space-between;align-items:center;font-family:var(--sans);font-size:14px;color:var(--mute);margin-bottom:10px}
+.arrows{display:flex;gap:6px}
+.arrows button{font:inherit;font-size:16px;line-height:1;width:34px;height:30px;border:1px solid var(--rule);background:var(--bg);color:var(--ink);border-radius:3px;cursor:pointer}
+.arrows button:hover{border-color:var(--link);color:var(--link)}
+.scroller{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 2px 14px;scrollbar-width:thin}
+.scroller:focus-visible{outline-offset:4px}
+.card{flex:0 0 270px;scroll-snap-align:start;border:1px solid var(--rule);border-radius:4px;padding:16px 16px 14px;background:var(--tint);display:flex;flex-direction:column;gap:8px}
+.card h3{font-family:var(--sans);font-weight:600;font-size:17px;letter-spacing:0;text-transform:none;color:var(--ink);margin:0}
+.card p{font-size:15.5px;line-height:1.5;color:var(--ink);margin:0}
+.card p+p{margin:0}
+.card .stk{font-family:var(--sans);font-size:13px;color:var(--mute);margin-top:auto}
+.card .lk{font-family:var(--sans);font-size:14.5px;display:flex;flex-wrap:wrap;gap:4px 14px;min-height:22px}
+
+.card .lk .ov{font:inherit;font-size:13px;color:var(--ink);background:var(--bg);border:1px solid var(--rule);border-radius:999px;padding:0 9px;line-height:20px;cursor:pointer}
+.card .lk .ov:hover{border-color:var(--link);color:var(--link)}
+.card .lk .ov[aria-expanded="true"]{background:var(--link);border-color:var(--link);color:#fff}
+.overview{margin-top:8px;border:1px solid var(--rule);border-radius:4px;padding:16px 18px 12px}
+.overview[hidden]{display:none}
+.ov-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.ov-title{font-family:var(--sans);font-weight:600;font-size:19px}
+.ov-meta{font-family:var(--sans);font-size:14px;color:var(--mute);margin-top:2px}
+.ov-close{font:inherit;font-size:22px;line-height:1;width:32px;height:32px;border:1px solid var(--rule);background:var(--bg);color:var(--ink);border-radius:3px;cursor:pointer;flex:none}
+.ov-close:hover{border-color:var(--link);color:var(--link)}
+.ov-desc{margin-top:10px;font-size:16.5px}
+.readme{margin-top:12px;max-height:360px;overflow:auto;border-top:1px solid var(--rule);padding:12px 4px 4px 0;font-size:16px;line-height:1.55}
+.readme:empty{display:none}
+.readme h1,.readme h2,.readme h3,.readme h4{font-family:var(--sans);font-weight:600;line-height:1.25;margin:14px 0 6px;text-transform:none;letter-spacing:0;color:var(--ink);border:0;padding:0}
+.readme h1{font-size:20px}.readme h2{font-size:18px}.readme h3,.readme h4{font-size:16px}
+.readme p,.readme ul,.readme ol,.readme pre,.readme table{margin:0 0 10px}
+.readme ul,.readme ol{padding-left:22px}
+.readme img{max-width:100%;height:auto}
+.readme pre{background:var(--tint);padding:10px;overflow:auto;font-size:13.5px;border-radius:3px}
+.readme code{font-size:.9em;background:var(--tint);padding:1px 4px;border-radius:3px}
+.readme pre code{background:none;padding:0}
+.readme table{border-collapse:collapse;display:block;overflow:auto}
+.readme th,.readme td{border:1px solid var(--rule);padding:4px 8px}
+.readme .anchor{display:none}
+.ov-foot{font-family:var(--sans);font-size:14.5px;margin-top:10px}
+
+footer{margin-top:44px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:14px;color:var(--mute)}
+
+@media (max-width:560px){
+  body{font-size:17px}
+  .head{padding-top:32px}
+  .pair img{height:210px}
+  .entry{grid-template-columns:1fr}
+  .entry .when{padding-top:0}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="head" id="home">
+  <h1>Qabas Alkaissi</h1>
+  <p class="role"><span>B.Sc. in Computer Engineering</span><span>Princess Sumaya University for Technology, Amman, Jordan</span></p>
+  <p class="contact">
+    <a href="mailto:qabaskaissi@gmail.com">Email</a>
+    <a href="https://www.linkedin.com/in/qabas-alkaissi" rel="me noopener">LinkedIn</a>
+    <a href="https://github.com/QabasAK" rel="me noopener">GitHub</a>
+  </p>
+</header>
+
+<nav class="menu" aria-label="Sections">
+  <a href="#home">Home</a><a href="#education">Education</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#experience">Experience</a><a href="#teaching">Teaching</a><a href="#projects">Projects</a>
+</nav>
+
+<main>
+  <section id="about" style="padding-top:18px">
+    <p>I am a computer engineer. I graduated from Princess Sumaya University for Technology (PSUT) in 2026, ranked first in my department and in the School of Engineering. My research interests are adversarial robustness for computer vision models, hardware security with physical unclonable functions (PUFs), and graph algorithms.</p>
+    <p>I did research at KAUST in the CyberSaR group in late 2025 through the Visiting Student Research Program. I also teach and mentor, and I am preparing for graduate study.</p>
+    <div class="note">
+      <b>Interested in collaborating?</b> I am open to research collaborations and to conversations about graduate study. Please <a href="mailto:qabaskaissi@gmail.com">send me an email</a>.
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="t" style="font-weight:600">B.Sc. in Computer Engineering, Princess Sumaya University for Technology (2021&ndash;2026)</div>
+    <ul class="bul" style="margin-top:8px">
+      <li>GPA 95.1/100. Ranked first in the Department and in the School of Engineering, and on the Honor List every year.</li>
+      <li>Chosen as the university flag bearer at the 2025 graduation ceremony, as top of the School of Engineering.</li>
+      <li>Bachelor's capstone graded 97/100, top in the department. It was presented to HRH Princess Sumaya bint El Hassan.</li>
+      <li>Audited graduate courses in algorithms (completing the course research project), cryptography, and research methodology.</li>
+      <li>Third place nationally, Jordanian Semiconductor Design Competition, 2025.</li>
+    </ul>
+    <div class="pair">
+      <figure class="fig">
+        <img src="images/qabas-alkaissi.jpg" width="640" height="875" alt="Portrait of Qabas Alkaissi in a graduation gown">
+        <figcaption>Graduation, 2026.</figcaption>
+      </figure>
+      <figure class="fig">
+        <img src="images/psut-flag-bearer-graduation.jpg" width="1200" height="675" alt="The PSUT flag being handed over on stage at the graduation ceremony" loading="lazy">
+        <figcaption>Flag bearer at PSUT graduation, 2025.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="research">
+    <h2>Research</h2>
+    <ul class="list">
+      <li>
+        <div class="t">Adversarial robustness of vision models (KAUST, CyberSaR)</div>
+        <div class="m">Implemented FGSM attacks on Faster R-CNN for autonomous-vehicle perception and prototyped a context-consistency defense that flags suspicious detections. Extended the work to vision-language models by adapting Single Image Unlearning to repair a backdoored LLaVA-1.5-7B, taking correct probes from 0/10 to 9/10. Supervisor: Prof. Ali Shoker.</div>
+      </li>
+      <li>
+        <div class="t">Hardware security with PUFs</div>
+        <div class="m">Capstone on FPGA-based PUF attestation for drone Remote ID modules, followed by open ring-oscillator PUF datasets and a paper on PUF-based memory obfuscation. Supervisor: Dr. Enas Abulibdeh.</div>
+      </li>
+      <li>
+        <div class="t">Biclique enumeration and graph algorithms (PSUT)</div>
+        <div class="m">Rebuilt a manuscript on the minimum correct reduction from maximal biclique to maximal clique enumeration, with a GPU construction that scales to 8.5M edges. Also surveyed applications of dominating sets, including driver proteins in protein interaction networks and extractive text summarization. With Dr. Raghda Hriez and Dr. Sahar Al-Eid.</div>
+      </li>
+      <li>
+        <div class="t">Applied mathematics (PSUT)</div>
+        <div class="m">Extended Fourier series theory using a gamma-based exponential function and studied accretive matrices. With Dr. Mohammad Sababha.</div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+
+    <h3>Conference papers</h3>
+    <ul class="list">
+      <li>
+        <div class="t">Lightweight Memory Obfuscation Using PUF-Based XOR Encryption</div>
+        <div class="m">Q. Alkaissi, S. Qarajeh, J. Falah, E. Abulibdeh. IEEE AEECT, 2026. <a href="https://doi.org/10.1109/AEECT69724.2026.11657825" rel="noopener">doi:10.1109/AEECT69724.2026.11657825</a></div>
+      </li>
+      <li>
+        <div class="t">Anomaly Detector for HTTP Protocol</div>
+        <div class="m">R. Hriez, A. Hadi, A. Barakat, J. S. Omer, Q. Alkaissi, A. Droos. IEEE ICECCE, 2025. <a href="https://doi.org/10.1109/ICECCE67514.2025.11257900" rel="noopener">doi:10.1109/ICECCE67514.2025.11257900</a></div>
+      </li>
+      <li>
+        <div class="t">Prediction of the Running Time for Multiplying Two 2048x2048 Matrices Using a GPU OpenCL SGEMM Kernel</div>
+        <div class="m">Q. Alkaissi, M. Mourad, M. Abu-Qtiesh, H. Abdel-Nabi. IEEE ICTCS, 2025. <a href="https://doi.org/10.1109/ICTCS65341.2025.10989440" rel="noopener">doi:10.1109/ICTCS65341.2025.10989440</a></div>
+      </li>
+    </ul>
+
+    <h3>Preprints and datasets</h3>
+    <ul class="list">
+      <li>
+        <div class="t">Design and Evaluation of a Mobile Manipulation System with Learning-Based Slip Mitigation</div>
+        <div class="m">Q. Alkaissi, A. Alsalem, L. Almousa, Q. Jildeh. Engineering Archive, 2026. <a href="https://doi.org/10.31224/8422" rel="noopener">doi:10.31224/8422</a></div>
+      </li>
+      <li>
+        <div class="t">FPGA Ring-Oscillator PUF Hardware Design and Reliability-Filtered Challenge-Response Pairs</div>
+        <div class="m">Q. Alkaissi, J. Falah, S. Qarajeh, E. Abulibdeh. IEEE DataPort, 2026. <a href="https://doi.org/10.21227/46ej-5s15" rel="noopener">doi:10.21227/46ej-5s15</a></div>
+      </li>
+      <li>
+        <div class="t">RO-PUF Challenge-Response Dataset: Repeated Measurements and a Cross-Board Set</div>
+        <div class="m">Q. Alkaissi, J. Falah, S. Qarajeh, E. Abulibdeh. Zenodo, 2026. <a href="https://doi.org/10.5281/zenodo.23147754" rel="noopener">doi:10.5281/zenodo.23147754</a></div>
+      </li>
+    </ul>
+
+    <h3>In preparation</h3>
+    <ul class="list">
+      <li>
+        <div class="t">The Minimum Correct Graph Inflation from Maximal Bicliques to Maximal Cliques</div>
+        <div class="m">R. F. Hriez, Q. Alkaissi, G. Al-Naymat. Manuscript in preparation, 2026.</div>
+      </li>
+    </ul>
+
+    <h3>Talks</h3>
+    <ul class="bul">
+      <li>Lightweight Memory Obfuscation Using PUF-Based XOR Encryption, IEEE AEECT, Jordan.</li>
+      <li>Invited speaker, "An Hour of AI" (IEEE Computer Society and ACM), PSUT. I presented PXL, a RAG-based student assistant.</li>
+      <li>Panelist, Research Opportunities Panel, ACM and IEEE PSUT, on the KAUST VSRP experience.</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="entry"><div class="when">Oct 2026 &ndash; now</div><div><div class="t">System Architect &amp; IT Lead, Lumari LLC (remote)</div><div class="m">Infrastructure, deployments and databases for an education platform piloted at UCF with 600+ users. Canvas LTI 1.3 integration, HECVAT and VPAT submissions, and a sketch-to-simulation circuit tool.</div></div></div>
+    <div class="entry"><div class="when">Oct &ndash; Dec 2025</div><div><div class="t">Research Intern, KAUST CyberSaR Group</div><div class="m">Visiting Student Research Program. Adversarial attacks and defenses for vision and vision-language models.</div></div></div>
+    <div class="entry"><div class="when">Aug &ndash; Sep 2025</div><div><div class="t">Data Acquisition &amp; Control Systems Intern, SESAME</div><div class="m">Tuned an EPICS-controlled robotic-arm sequence and built an automated pipeline that collects experiment logs from six beamline stations.</div></div></div>
+    <div class="entry"><div class="when">Mar 2024 &ndash; now</div><div><div class="t">Undergraduate Research Assistant, PSUT</div><div class="m">Graph algorithms and security, applied mathematics, and graph domination.</div></div></div>
+    <div class="entry"><div class="when">Sep 2024 &ndash; Sep 2025</div><div><div class="t">Vice President, ACM PSUT Student Chapter</div><div class="m">Co-led a team of 11 running coding marathons and workshops for 2000+ students. Designed the ACM Research Competition and built PXL.</div></div></div>
+  </section>
+
+  <section id="teaching">
+    <h2>Teaching and mentoring</h2>
+    <div class="entry"><div class="when">Oct 2026 &ndash; now</div><div><div class="t">Section Leader, Probability for AI, Stanford (online)</div></div></div>
+    <div class="entry"><div class="when">Apr &ndash; May 2026</div><div><div class="t">Section Leader, Code in Place, Stanford (online)</div><div class="m">Taught a weekly section of introductory Python with original animations.</div></div></div>
+    <div class="entry"><div class="when">Mar 2024 &ndash; Jun 2026</div><div><div class="t">Undergraduate Teaching Assistant, PSUT</div><div class="m">Advanced Computer Architecture (Dr. Mohammad Abdel-Majeed) and Algorithms Design and Analysis (Dr. Ibrahim Albluwi).</div></div></div>
+    <div class="entry"><div class="when">Dec 2022 &ndash; Aug 2025</div><div><div class="t">Peer Academic Tutor, PSUT</div><div class="m">Remedial classes in circuits, signals, control, logic design, linear algebra and calculus.</div></div></div>
+    <div class="entry"><div class="when">Ongoing</div><div><div class="t">Research application mentorship</div><div class="m">I help students applying to international research programs. Mentees have been admitted to KAUST VSRP and SESAME. I also wrote open study guides for 15+ courses.</div></div></div>
+  </section>
+
+  <section id="projects">
+    <h2>Selected projects</h2>
+    <div class="scroller-bar">
+      <span>Scroll or use the arrows</span>
+      <span class="arrows"><button type="button" id="prev" aria-label="Previous projects">&larr;</button><button type="button" id="next" aria-label="Next projects">&rarr;</button></span>
+    </div>
+    <div class="scroller" id="scroller" role="list" tabindex="0" aria-label="Selected projects">
+      <article class="card" role="listitem">
+        <h3>PUF attestation for drone Remote ID</h3>
+        <p>Bachelor's capstone, graded 97/100. FPGA-based PUF attestation for Remote ID modules, with flight-controller software.</p>
+        <div class="stk">FPGA &middot; PUFs &middot; Firmware</div>
+        <div class="lk"></div>
+      </article>
+      <article class="card" role="listitem">
+        <h3>XorPUF-Mem</h3>
+        <p>Lightweight memory obfuscation using PUF-based XOR encryption.</p>
+        <div class="stk">Hardware security &middot; FPGA</div>
+        <div class="lk"><a href="https://github.com/QabasAK/XorPUF-Mem" rel="noopener">Repo</a><button type="button" class="ov" data-repo="QabasAK/XorPUF-Mem" aria-label="Overview of XorPUF-Mem" aria-controls="overview">Overview</button> <a href="https://doi.org/10.1109/AEECT69724.2026.11657825" rel="noopener">Paper</a></div>
+      </article>
+      <article class="card" role="listitem">
+        <h3>Dimver</h3>
+        <p>Mobile manipulation system with learning-based slip mitigation.</p>
+        <div class="stk">Robotics &middot; Machine learning</div>
+        <div class="lk"><a href="https://github.com/AlanoudAlsalem/Dimver" rel="noopener">Repo</a><button type="button" class="ov" data-repo="AlanoudAlsalem/Dimver" aria-label="Overview of Dimver" aria-controls="overview">Overview</button> <a href="https://doi.org/10.31224/8422" rel="noopener">Preprint</a></div>
+      </article>
+      <article class="card" role="listitem">
+        <h3>MatrixMul-RunTime</h3>
+        <p>Predicting the running time of 2048x2048 matrix multiplication with a GPU OpenCL SGEMM kernel.</p>
+        <div class="stk">OpenCL &middot; GPU</div>
+        <div class="lk"><a href="https://github.com/QabasAK/MatrixMul-RunTime" rel="noopener">Repo</a><button type="button" class="ov" data-repo="QabasAK/MatrixMul-RunTime" aria-label="Overview of MatrixMul-RunTime" aria-controls="overview">Overview</button> <a href="https://doi.org/10.1109/ICTCS65341.2025.10989440" rel="noopener">Paper</a></div>
+      </article>
+      <article class="card" role="listitem">
+        <h3>SAT solvers</h3>
+        <p>CDCL and DPLL solvers validated on SATLIB, a linear-time 2-SAT solver, and a Tseitin encoder. Visualized with Manim.</p>
+        <div class="stk">C++ &middot; Manim</div>
+        <div class="lk"><a href="https://github.com/QabasAK/SAT-Solver" rel="noopener">SAT-Solver</a><button type="button" class="ov" data-repo="QabasAK/SAT-Solver" aria-label="Overview of SAT-Solver" aria-controls="overview">Overview</button> <a href="https://github.com/QabasAK/2SAT-Solver" rel="noopener">2SAT-Solver</a><button type="button" class="ov" data-repo="QabasAK/2SAT-Solver" aria-label="Overview of 2SAT-Solver" aria-controls="overview">Overview</button> <a href="https://github.com/QabasAK/Tseitin-Encoder" rel="noopener">Tseitin-Encoder</a><button type="button" class="ov" data-repo="QabasAK/Tseitin-Encoder" aria-label="Overview of Tseitin-Encoder" aria-controls="overview">Overview</button></div>
+      </article>
+      <article class="card" role="listitem">
+        <h3>RISCV-CPU</h3>
+        <p>5-stage pipelined RISC-V processor with hazard detection and forwarding.</p>
+        <div class="stk">Verilog</div>
+        <div class="lk"><a href="https://github.com/QabasAK/RISCV-CPU" rel="noopener">Repo</a><button type="button" class="ov" data-repo="QabasAK/RISCV-CPU" aria-label="Overview of RISCV-CPU" aria-controls="overview">Overview</button></div>
+      </article>
+      <article class="card" role="listitem">
+        <h3>JoSDC-SILICORE</h3>
+        <p>Superscalar processor for JoSDC'24 with a C# static scheduler and a logistic-regression branch predictor (97.62% F1).</p>
+        <div class="stk">Python &middot; C# &middot; Verilog</div>
+        <div class="lk"><a href="https://github.com/QabasAK/JoSDC-SILICORE" rel="noopener">Repo</a><button type="button" class="ov" data-repo="QabasAK/JoSDC-SILICORE" aria-label="Overview of JoSDC-SILICORE" aria-controls="overview">Overview</button></div>
+      </article>
+      <article class="card" role="listitem">
+        <h3>AWS-HaaS</h3>
+        <p>Cloud-based honeypot-as-a-service using Cowrie to detect and analyze SSH and Telnet attacks.</p>
+        <div class="stk">AWS &middot; Cowrie &middot; Python</div>
+        <div class="lk"><a href="https://github.com/QabasAK/AWS-HaaS" rel="noopener">Repo</a><button type="button" class="ov" data-repo="QabasAK/AWS-HaaS" aria-label="Overview of AWS-HaaS" aria-controls="overview">Overview</button></div>
+      </article>
+      <article class="card" role="listitem">
+        <h3>SESAME-Ingestor</h3>
+        <p>Automated pipeline that collects experiment logs from six beamline stations over SSH/rsync with ZMQ notifications.</p>
+        <div class="stk">Python &middot; EPICS &middot; ZMQ</div>
+        <div class="lk"><a href="https://github.com/QabasAK/SESAME-Ingestor" rel="noopener">Repo</a><button type="button" class="ov" data-repo="QabasAK/SESAME-Ingestor" aria-label="Overview of SESAME-Ingestor" aria-controls="overview">Overview</button></div>
+      </article>
+      <article class="card" role="listitem">
+        <h3>ACM-PXL</h3>
+        <p>RAG-based assistant that helps students with courses, training and events.</p>
+        <div class="stk">Python &middot; Streamlit &middot; RAG</div>
+        <div class="lk"><a href="https://github.com/QabasAK/ACM-PXL" rel="noopener">Repo</a><button type="button" class="ov" data-repo="QabasAK/ACM-PXL" aria-label="Overview of ACM-PXL" aria-controls="overview">Overview</button></div>
+      </article>
+      <article class="card" role="listitem">
+        <h3>ResApp-Toolkit</h3>
+        <p>Open LaTeX template and six-page guide for research program applications.</p>
+        <div class="stk">LaTeX</div>
+        <div class="lk"><a href="https://github.com/QabasAK/ResApp-Toolkit" rel="noopener">Repo</a><button type="button" class="ov" data-repo="QabasAK/ResApp-Toolkit" aria-label="Overview of ResApp-Toolkit" aria-controls="overview">Overview</button></div>
+      </article>
+    </div>
+      <div class="overview" id="overview" hidden aria-live="polite">
+      <div class="ov-head">
+        <div>
+          <div class="ov-title" id="ov-title"></div>
+          <div class="ov-meta" id="ov-meta"></div>
+        </div>
+        <button type="button" class="ov-close" id="ov-close" aria-label="Close overview">&times;</button>
+      </div>
+      <p class="ov-desc" id="ov-desc"></p>
+      <div class="readme" id="ov-readme" tabindex="0" aria-label="Repository README"></div>
+      <div class="ov-foot"><a id="ov-open" href="#" rel="noopener">Open on GitHub</a></div>
+    </div>
+  </section>
+</main>
+
+<footer>&copy; <span id="year">2026</span> Qabas Alkaissi &middot; Amman, Jordan</footer>
+
+</div>
+<script>
+try{document.getElementById('year').textContent=new Date().getFullYear();}catch(e){}
+
+(function(){
+  try{
+    var sc=document.getElementById('scroller');
+    function step(d){sc.scrollBy({left:d*(sc.clientWidth*0.8),behavior:'smooth'});}
+    document.getElementById('prev').addEventListener('click',function(){step(-1);});
+    document.getElementById('next').addEventListener('click',function(){step(1);});
+  }catch(e){}
+})();
+
+(function(){
+  try{
+    var panel=document.getElementById('overview');
+    var elTitle=document.getElementById('ov-title'),elMeta=document.getElementById('ov-meta'),
+        elDesc=document.getElementById('ov-desc'),elReadme=document.getElementById('ov-readme'),
+        elOpen=document.getElementById('ov-open'),active=null,cache={};
+    function closePanel(){panel.hidden=true;if(active){active.setAttribute('aria-expanded','false');active=null;}}
+    function fix(root,repo){
+      var raw='https://raw.githubusercontent.com/'+repo+'/HEAD/',base='https://github.com/'+repo+'/blob/HEAD/';
+      root.querySelectorAll('img').forEach(function(i){var u=i.getAttribute('src')||'';if(u&&!/^(https?:|data:)/.test(u))i.setAttribute('src',raw+u.replace(/^\.?\//,''));});
+      root.querySelectorAll('a').forEach(function(a){var h=a.getAttribute('href')||'';if(h.charAt(0)==='#'){a.removeAttribute('href');return;}if(h&&!/^(https?:|mailto:)/.test(h))a.setAttribute('href',base+h.replace(/^\.?\//,''));a.setAttribute('target','_blank');a.setAttribute('rel','noopener');});
+    }
+    function fallback(btn,repo,note){
+      var card=btn.closest('.card');
+      elTitle.textContent=repo.split('/')[1];
+      elMeta.textContent=note||'';
+      elDesc.textContent=card?card.querySelector('p').textContent:'';
+      elReadme.innerHTML='';
+    }
+    function show(btn,repo,d,readmeHtml){
+      elTitle.textContent=d.name||repo.split('/')[1];
+      var bits=[];
+      if(d.language)bits.push(d.language);
+      if(typeof d.stargazers_count==='number')bits.push('\u2605 '+d.stargazers_count);
+      if(d.pushed_at)bits.push('Updated '+new Date(d.pushed_at).toLocaleDateString('en-GB',{month:'short',year:'numeric'}));
+      elMeta.textContent=bits.join(' \u00b7 ');
+      elDesc.textContent=d.description||'';
+      elReadme.innerHTML=readmeHtml||'';
+      fix(elReadme,repo);
+    }
+    function open(btn){
+      var repo=btn.getAttribute('data-repo');
+      if(active===btn){closePanel();return;}
+      if(active)active.setAttribute('aria-expanded','false');
+      active=btn;btn.setAttribute('aria-expanded','true');
+      elOpen.href='https://github.com/'+repo;
+      panel.hidden=false;
+      elTitle.textContent=repo.split('/')[1];elMeta.textContent='Loading overview\u2026';elDesc.textContent='';elReadme.innerHTML='';
+      if(cache[repo]){show(btn,repo,cache[repo].d,cache[repo].r);return;}
+      var h={'Accept':'application/vnd.github+json'};
+      Promise.all([
+        fetch('https://api.github.com/repos/'+repo,{headers:h}).then(function(r){if(!r.ok)throw 0;return r.json();}),
+        fetch('https://api.github.com/repos/'+repo+'/readme',{headers:{'Accept':'application/vnd.github.html+json'}}).then(function(r){return r.ok?r.text():'';}).catch(function(){return '';})
+      ]).then(function(res){
+        cache[repo]={d:res[0],r:res[1]};
+        if(active===btn)show(btn,repo,res[0],res[1]);
+      }).catch(function(){
+        if(active===btn)fallback(btn,repo,'Live preview is unavailable right now. Use the link below to open the repository.');
+      });
+    }
+    document.getElementById('scroller').addEventListener('click',function(e){
+      var b=e.target.closest&&e.target.closest('.ov');if(b)open(b);
+    });
+    document.getElementById('ov-close').addEventListener('click',closePanel);
+  }catch(e){}
+})();
+</script>
+</body>
+</html>
