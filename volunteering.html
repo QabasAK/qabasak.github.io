@@ -19,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=3">
+<link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 <div class="wrap">
@@ -44,14 +44,33 @@
 <main>
   <section id="volunteering" style="padding-top:18px">
     <h2>Volunteering and community</h2>
-    <h3>Sign language</h3>
-    <div class="entry"><div class="when">Ongoing</div><div><div class="t">1000 Hands</div><div class="m">An initiative teaching university students basic Jordanian Sign Language (JSL).</div></div></div>
-    <div class="entry"><div class="when">In progress</div><div><div class="t">LIU, an engineering sign language lexicon</div><div class="m">A bilingual web lexicon that pairs engineering concepts with their JSL signs, for Deaf engineering students.</div><a class="peek" href="https://liu-lexicon.pages.dev" rel="noopener"><img src="images/liu-lexicon.jpg" width="800" height="600" alt="Preview of the LIU lexicon home page" loading="lazy" style="object-position:50% 50%"></a></div></div>
-    <div class="entry"><div class="when">Ongoing</div><div><div class="t">ASL Frequency Dictionary</div><div class="m">A small online repository teaching the basics of American Sign Language, to promote accessibility.</div><a class="peek" href="https://tiny-papyrus-3bc.notion.site/ASL-Frequency-Dictionary-f03ae92df0e24315a703db13f7000c0c" rel="noopener"><img src="images/asl-dictionary.jpg" width="800" height="600" alt="Preview of the ASL Frequency Dictionary on Notion" loading="lazy"></a></div></div>
+    <div class="group">
+      <div class="scroller-bar"><h3 class="gt">Sign language</h3><span class="arrows"><button type="button" class="prev" aria-label="Previous sign language project">&larr;</button><button type="button" class="next" aria-label="Next sign language project">&rarr;</button></span></div>
+      <div class="scroller" role="list" tabindex="0" aria-label="Sign language projects">
+      <article class="card" role="listitem">
+        <div class="peek art a-hands" aria-hidden="true"><b>1000 Hands</b><small>Jordanian Sign Language</small></div>
+        <h3>1000 Hands</h3>
+        <p>An initiative teaching university students basic Jordanian Sign Language (JSL).</p>
+        <div class="lk"></div>
+      </article>
+      <article class="card" role="listitem">
+        <a class="peek art a-liu" href="https://liu-lexicon.pages.dev" rel="noopener" aria-label="Open LIU"><svg viewBox="0 -3 14 14" aria-hidden="true"><path fill="#0B0B0C" d="M0 0h2v8H0zM0 6h4v2H0zM5 3h2v5H5zM8 3h2v5H8zM8 6h6v2H8zM12 0h2v8h-2z"/><rect x="5" y="0" width="2" height="2" fill="#2A44B5"/></svg><small>JSL Engineering Lexicon</small></a>
+        <h3>LIU lexicon</h3>
+        <p>A bilingual web lexicon that pairs engineering concepts with their JSL signs, for Deaf engineering students.</p>
+        <div class="lk"><a href="https://liu-lexicon.pages.dev" rel="noopener">Open LIU</a></div>
+      </article>
+      <article class="card" role="listitem">
+        <a class="peek art a-asl" href="https://tiny-papyrus-3bc.notion.site/ASL-Frequency-Dictionary-f03ae92df0e24315a703db13f7000c0c" rel="noopener" aria-label="Open the ASL Frequency Dictionary"><b>ASL</b><small>Frequency Dictionary</small></a>
+        <h3>ASL Frequency Dictionary</h3>
+        <p>A small online repository teaching the basics of American Sign Language, to promote accessibility.</p>
+        <div class="lk"><a href="https://tiny-papyrus-3bc.notion.site/ASL-Frequency-Dictionary-f03ae92df0e24315a703db13f7000c0c" rel="noopener">Open in Notion</a></div>
+      </article>
+      </div>
+    </div>
     <h3>Research application mentorship</h3>
-    <div class="entry"><div class="when">Ongoing</div><div><div class="t">Helping students apply to research programs</div><div class="m">From cold emails to CVs, statements and recommendation letters. I built <a href="https://github.com/QabasAK/ResApp-Toolkit" rel="noopener">ResApp-Toolkit</a>, an open LaTeX template with a six-page guide. Mentees have been admitted to KAUST VSRP and SESAME, and two more reached interviews.</div></div></div>
+    <div class="entry nodate"><div><div class="t">Helping students apply to research programs</div><div class="m">From cold emails to CVs, statements and recommendation letters. I built <a href="https://github.com/QabasAK/ResApp-Toolkit" rel="noopener">ResApp-Toolkit</a>, an open LaTeX template with a six-page guide. Mentees have been admitted to KAUST VSRP and SESAME, and two more reached interviews.</div></div></div>
     <h3>Open study guides</h3>
-    <div class="entry"><div class="when">Ongoing</div><div><div class="t">Study guides for 15+ courses and tools</div><div class="m">The Data Structures guide is also on the <a href="https://github.com/ialbluwi/psut-data-structures/tree/main/study%20guides" rel="noopener">official course website</a>.</div></div></div>
+    <div class="entry nodate"><div><div class="t">Study guides for 15+ courses and tools</div><div class="m">The Data Structures guide is also on the <a href="https://github.com/ialbluwi/psut-data-structures/tree/main/study%20guides" rel="noopener">official course website</a>.</div></div></div>
     <div class="group" style="margin-top:14px">
       <div class="scroller-bar"><h3 class="gt">Five of the guides</h3><span class="arrows"><button type="button" class="prev" aria-label="Previous study guide">&larr;</button><button type="button" class="next" aria-label="Next study guide">&rarr;</button></span></div>
       <div class="scroller" role="list" tabindex="0" aria-label="Study guides">
