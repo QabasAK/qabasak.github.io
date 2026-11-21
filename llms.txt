@@ -1,0 +1,29 @@
+# Qabas Alkaissi
+
+> Computer engineer from Amman, Jordan. B.Sc. in Computer Engineering from Princess Sumaya University for Technology (PSUT), 2021–2026, ranked first in the department and the School of Engineering (GPA 95.1/100). Research on adversarial robustness for computer vision, hardware security with physical unclonable functions (PUFs), and graph algorithms. Open to research collaborations and graduate study.
+
+Contact: qabaskaissi@gmail.com · [LinkedIn](https://www.linkedin.com/in/qabas-alkaissi) · [GitHub](https://github.com/QabasAK) · [Google Scholar](https://scholar.google.com/citations?user=SdNXE7MAAAAJ) · [ORCID](https://orcid.org/0009-0009-9129-5249)
+
+## Pages
+
+- [Home](https://qabasak.github.io/): summary, degree, honors and awards, certificates
+- [Research](https://qabasak.github.io/research.html): research positions (KAUST CyberSaR, PSUT), research areas, publications, datasets, talks
+- [Experience](https://qabasak.github.io/experience.html): industry roles (Lumari, SESAME, startups) and leadership (ACM PSUT)
+- [Teaching](https://qabasak.github.io/teaching.html): Stanford section leader, PSUT teaching assistant and tutor, open study guides
+- [Volunteering](https://qabasak.github.io/volunteering.html): 1000 Hands and the LIU Jordanian Sign Language engineering lexicon, an ASL dictionary, research application mentorship
+- [Projects](https://qabasak.github.io/projects.html): hardware, robotics, algorithms, security and software projects with code
+
+## Key facts
+
+- Research Intern, KAUST CyberSaR Group (Oct–Dec 2025, Visiting Student Research Program), supervised by Prof. Ali Shoker
+- Undergraduate Research Assistant, PSUT (since Mar 2024)
+- System Architect and IT Lead, Lumari LLC (since Oct 2026)
+- National Academic Excellence Award, Ministry of Higher Education and Scientific Research, Jordan (2026)
+- Third place nationally, Jordanian Semiconductor Design Competition (2025)
+
+## Publications
+
+- Lightweight Memory Obfuscation Using PUF-Based XOR Encryption. IEEE AEECT, 2026. https://doi.org/10.1109/AEECT69724.2026.11657825
+- Anomaly Detector for HTTP Protocol. IEEE ICECCE, 2025. https://doi.org/10.1109/ICECCE67514.2025.11257900
+- Prediction of the Running Time for Multiplying Two 2048x2048 Matrices Using a GPU OpenCL SGEMM Kernel. IEEE ICTCS, 2025. https://doi.org/10.1109/ICTCS65341.2025.10989440
+- Design and Evaluation of a Mobile Manipulation System with Learning-Based Slip Mitigation. Engineering Archive (preprint), 2026. https://doi.org/10.31224/8422
