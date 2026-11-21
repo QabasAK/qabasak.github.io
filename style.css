@@ -27,6 +27,9 @@ h1{font-family:var(--sans);font-weight:600;font-size:clamp(32px,6vw,42px);line-h
 .role{margin-top:6px;color:var(--mute);font-size:19px}
 .role span{display:block}
 .contact{margin-top:14px;font-family:var(--sans);font-size:16px;display:flex;flex-wrap:wrap;gap:6px 18px}
+.contact a{display:inline-flex;align-items:center;gap:6px}
+.contact svg{width:16px;height:16px;fill:currentColor;flex:none}
+.contact svg .ln{fill:none;stroke:currentColor;stroke-width:2;stroke-linejoin:round}
 
 nav.menu{font-family:var(--sans);font-size:16px;display:flex;flex-wrap:wrap;gap:6px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:10px 0;margin:18px 0 8px}
 nav.menu a{color:var(--ink)}
@@ -113,10 +116,12 @@ nav.menu a[aria-current="page"]{color:var(--link);font-weight:600}
 .name a{color:var(--ink)}
 .name a:hover{text-decoration:none}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-.embed{margin-top:8px}
-.embed summary{font-family:var(--sans);font-size:15px;font-weight:600;color:var(--link);cursor:pointer;padding:4px 0}
-.embed iframe{display:block;width:100%;height:520px;border:1px solid var(--rule);border-radius:3px;margin-top:6px;background:var(--bg)}
-.embed p{font-size:14.5px;margin-top:4px}
+.peek{display:block;margin-top:10px;max-width:380px;border:1px solid var(--rule);border-radius:4px;overflow:hidden;background:var(--bg)}
+.peek:hover{border-color:var(--link)}
+.peek img{display:block;width:100%;height:auto;aspect-ratio:2/1;object-fit:cover;object-position:50% 100%}
+.card .peek{margin:-16px -16px 4px;max-width:none;border:0;border-bottom:1px solid var(--rule);border-radius:4px 4px 0 0}
+.sup{font-family:var(--sans);font-size:15px;margin-top:6px}
+.sup span{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);margin-right:8px}
 .group{margin-top:30px}
 .group:first-of-type{margin-top:0}
 .scroller-bar .gt{margin:0}
