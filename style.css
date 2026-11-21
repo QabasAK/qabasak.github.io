@@ -125,9 +125,17 @@ nav.menu a[aria-current="page"]{color:var(--link);font-weight:600}
 .peek.art b{font-size:34px;font-weight:600;line-height:1;letter-spacing:-.01em}
 .peek.art small{font-size:13px;letter-spacing:.06em;text-transform:uppercase;opacity:.8}
 .a-hands{background:#2A44B5;color:#fff}
+.peek.art small[lang="ar"]{font-size:20px;letter-spacing:0;text-transform:none}
 .a-liu{background:#F1EFEA;color:#0B0B0C}
 .a-liu svg{width:110px;height:auto}
-.a-asl{background:#1b1f24;color:#fff}
+.a-asl{background:#127C8A;color:#fff}
+.a-name{background:#6B3FA0;color:#fff}
+.a-3d{background:#3F7D20;color:#fff}
+.a-3d b{font-size:72px}
+.a-mail{background:#C8323A;color:#fff}
+.a-mail b{font-size:64px}
+.a-kit{background:#0B0B0C;color:#fff}
+.a-kit code{font-family:ui-monospace,Consolas,monospace;font-size:15px;line-height:1.6}
 .a-asl b{font-family:var(--serif);font-size:52px;letter-spacing:.04em}
 .entry.nodate{grid-template-columns:1fr}
 .card .peek.book img{width:auto;height:200px;aspect-ratio:auto;object-fit:contain;margin:0 auto;box-shadow:0 2px 8px rgba(0,0,0,.18)}
